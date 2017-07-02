@@ -7,10 +7,10 @@ app.use(express.static('public'));
 const PORT = process.env.PORT || 8080;
 
 app.use(function(req, res, next){
-  if ( req.headers['x-forwarded-proto'] === 'https') {
+  if ( req.headers['x-forwarded-proto'] === 'http' ) {
     next();
   } else {
-    res.redirect('https://' + req.hostname + req.url);
+    res.redirect('http://' + req.hostname + req.url);
   }
 });
 
