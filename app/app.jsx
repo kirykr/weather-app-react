@@ -1,7 +1,7 @@
 import React from 'react';
 var ReactDOM = require('react-dom');
 // import { BrowserRouter,HashRouter, Switch, Link, Route} from 'react-router-dom'
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import createHashHistory from 'history/createHashHistory';
 //
 
@@ -20,7 +20,7 @@ const App = () => (
 // This demo uses a HashRouter instead of BrowserRouter
 // because there is no server to match URLs
 ReactDOM.render((
-  <HashRouter history={history}>
+  <BrowserRouter history={history}>
     <App />
-  </HashRouter>
+  </BrowserRouter>
 ), document.getElementById('app'));
