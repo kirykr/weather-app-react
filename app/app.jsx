@@ -10,7 +10,6 @@ import Nav from 'Nav';
 import Main from 'Main';
 //
 const history = createHashHistory();
-// http://api.openweathermap.org/data/2.5/weather?q=phnom+penh,kh&units=metric&appid=3a1ee23519affdb6d9b806b559762f67
 const App = () => (
   <div>
     <Nav />
